@@ -1,0 +1,240 @@
+[
+    {
+        "name": "Inception",
+        "description": "2010. A skilled thief who infiltrates dreams to extract secrets is offered a chance to erase his criminal record by performing an almost-impossible 'inception' вЂ” planting an idea into someone's subconscious.",
+        "rate": 8.8,
+        "genre": "Sci-Fi",
+        "actors": [
+            "Leonardo DiCaprio",
+            "Joseph Gordon-Levitt",
+            "Elliot Page"
+        ],
+        "poster": "https://www.example.com/posters/inception.jpg",
+        "year": 2010,
+        "director": "Christopher Nolan"
+    },
+    {
+        "name": "The Dark Knight",
+        "description": "2008. Batman must confront the chaotic Joker, whose ruthless campaign of terror forces Bruce Wayne to make impossible moral choices while Gotham descends into anarchy.",
+        "rate": 9.0,
+        "genre": "Action",
+        "actors": [
+            "Christian Bale",
+            "Heath Ledger",
+            "Aaron Eckhart"
+        ],
+        "poster": "https://www.example.com/posters/the_dark_knight.jpg",
+        "year": 2008,
+        "director": "Christopher Nolan"
+    },
+    {
+        "name": "Interstellar",
+        "description": "2014. With Earth becoming uninhabitable, a team of explorers travels through a wormhole searching for a new home for humanity вЂ” a story about love, sacrifice and the science of relativity.",
+        "rate": 8.6,
+        "genre": "Adventure",
+        "actors": [
+            "Matthew McConaughey",
+            "Anne Hathaway",
+            "Jessica Chastain"
+        ],
+        "poster": "https://www.example.com/posters/interstellar.jpg",
+        "year": 2014,
+        "director": "Christopher Nolan"
+    },
+    {
+        "name": "The Matrix",
+        "description": "1999. A hacker named Neo discovers that reality is a simulated construct controlled by machines, and joins a rebellion to free humanity from the Matrix.",
+        "rate": 8.7,
+        "genre": "Sci-Fi",
+        "actors": [
+            "Keanu Reeves",
+            "Laurence Fishburne",
+            "Carrie-Anne Moss"
+        ],
+        "poster": "https://www.example.com/posters/the_matrix.jpg",
+        "year": 1999,
+        "director": "The Wachowskis"
+    },
+    {
+        "name": "The Shawshank Redemption",
+        "description": "1994. Wrongfully imprisoned banker Andy Dufresne forms a powerful friendship with fellow inmate Red, surviving decades of hardship through hope, cleverness and quiet dignity.",
+        "rate": 9.3,
+        "genre": "Drama",
+        "actors": [
+            "Tim Robbins",
+            "Morgan Freeman",
+            "Bob Gunton"
+        ],
+        "poster": "https://www.example.com/posters/shawshank_redemption.jpg",
+        "year": 1994,
+        "director": "Frank Darabont"
+    },
+    {
+        "name": "The Godfather",
+        "description": "1972. The powerful Corleone mafia family navigates power, loyalty and betrayal as patriarch Vito Corleone tries to protect his empire and prepare his reluctant son Michael for leadership.",
+        "rate": 9.2,
+        "genre": "Crime",
+        "actors": [
+            "Marlon Brando",
+            "Al Pacino",
+            "James Caan"
+        ],
+        "poster": "https://www.example.com/posters/the_godfather.jpg",
+        "year": 1972,
+        "director": "Francis Ford Coppola"
+    },
+    {
+        "name": "Pulp Fiction",
+        "description": "1994. Interwoven stories of crime, redemption and dark humor in 1990s Los Angeles вЂ” a nonlinear crime masterpiece famous for its sharp dialogue and memorable characters.",
+        "rate": 8.9,
+        "genre": "Crime",
+        "actors": [
+            "John Travolta",
+            "Uma Thurman",
+            "Samuel L. Jackson"
+        ],
+        "poster": "https://www.example.com/posters/pulp_fiction.jpg",
+        "year": 1994,
+        "director": "Quentin Tarantino"
+    },
+    {
+        "name": "Fight Club",
+        "description": "1999. An insomniac office worker forms an underground fight club with a charismatic soap salesman, unleashing chaos and challenging modern consumer culture вЂ” a psychological dark drama.",
+        "rate": 8.8,
+        "genre": "Drama",
+        "actors": [
+            "Edward Norton",
+            "Brad Pitt",
+            "Helena Bonham Carter"
+        ],
+        "poster": "https://www.example.com/posters/fight_club.jpg",
+        "year": 1999,
+        "director": "David Fincher"
+    },
+    {
+        "name": "Forrest Gump",
+        "description": "1994. The gentle and honest Forrest, unintentionally present at many historical moments, tells the story of love, fate and an ordinary man's extraordinary life.",
+        "rate": 8.8,
+        "genre": "Drama",
+        "actors": [
+            "Tom Hanks",
+            "Robin Wright",
+            "Gary Sinise"
+        ],
+        "poster": "https://www.example.com/posters/forrest_gump.jpg",
+        "year": 1994,
+        "director": "Robert Zemeckis"
+    },
+    {
+        "name": "The Lord of the Rings: The Fellowship of the Ring",
+        "description": "2001. A young hobbit, Frodo, inherits a powerful ring and sets out with a fellowship to destroy it in the fires of Mount Doom вЂ” the beginning of an epic fantasy saga.",
+        "rate": 8.8,
+        "genre": "Fantasy",
+        "actors": [
+            "Elijah Wood",
+            "Ian McKellen",
+            "Viggo Mortensen"
+        ],
+        "poster": "https://www.example.com/posters/lotr_fellowship.jpg",
+        "year": 2001,
+        "director": "Peter Jackson"
+    },
+    {
+        "name": "Spirited Away",
+        "description": "2001. A young girl becomes trapped in a mysterious spirit world and must work in a bathhouse for supernatural beings to find a way to rescue her parents and return home.",
+        "rate": 8.6,
+        "genre": "Animation",
+        "actors": [
+            "Rumi Hiiragi",
+            "Miyu Irino",
+            "Mari Natsuki"
+        ],
+        "poster": "https://www.example.com/posters/spirited_away.jpg",
+        "year": 2001,
+        "director": "Hayao Miyazaki"
+    },
+    {
+        "name": " ",
+        "description": "2014. A young drummer enrolls at a competitive music conservatory and faces an obsessive instructor whose brutal teaching methods push him toward excellence and self-destruction.",
+        "rate": 8.5,
+        "genre": "Drama",
+        "actors": [
+            "Miles Teller",
+            "J.K. Simmons",
+            "Melissa Benoist"
+        ],
+        "poster": "https://www.example.com/posters/whiplash.jpg",
+        "year": 2014,
+        "director": "Damien Chazelle"
+    },
+    {
+        "name": "Parasite",
+        "description": "2019. A poor family schemes to infiltrate a wealthy household, triggering a darkly comic and escalating clash that explores class, greed and social inequality.",
+        "rate": 8.6,
+        "genre": "Thriller",
+        "actors": [
+            "Song Kang-ho",
+            "Lee Sun-kyun",
+            "Cho Yeo-jeong"
+        ],
+        "poster": "https://www.example.com/posters/parasite.jpg",
+        "year": 2019,
+        "director": "Bong Joon-ho"
+    },
+    {
+        "name": "Blade Runner 2049",
+        "description": "2017. A blade runner uncovers a long-buried secret that leads him on a quest to find a former blade runner and unravel mysteries about identity and humanity.",
+        "rate": 8.0,
+        "genre": "Sci-Fi",
+        "actors": [
+            "Ryan Gosling",
+            "Harrison Ford",
+            "Ana de Armas"
+        ],
+        "poster": "https://www.example.com/posters/blade_runner_2049.jpg",
+        "year": 2017,
+        "director": "Denis Villeneuve"
+    },
+    {
+        "name": "test",
+        "description": "test",
+        "rate": 1.1,
+        "genre": "test",
+        "actors": [
+            "Test",
+            "Test",
+            "Test"
+        ],
+        "poster": "test",
+        "year": 2000,
+        "director": "test"
+    },
+    {
+        "name": "Тралалыш",
+        "description": "Лирилиралила",
+        "rate": 1.1,
+        "genre": "жанр крутой",
+        "actors": [
+            "А4",
+            "Я",
+            "Моя семья"
+        ],
+        "poster": "нету картинки",
+        "year": 2026,
+        "director": "Даничка"
+    },
+    {
+        "name": "easfcaeWSD",
+        "description": "dfweaqNKLBQSyQb",
+        "rate": 1.1,
+        "genre": "LELE",
+        "actors": [
+            "Le",
+            "Le",
+            "Le"
+        ],
+        "poster": "mmmmm",
+        "year": 1941,
+        "director": "me"
+    }
+]
