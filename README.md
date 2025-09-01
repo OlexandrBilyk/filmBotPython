@@ -16,6 +16,5 @@
 
 1. Клонувати репозиторій:
    ```bash
-   git clone <URL_репозиторію>
-   cd <назва_папки>
+   git clone https://github.com/OlexandrBilyk/filmBotPython.git
    ```
