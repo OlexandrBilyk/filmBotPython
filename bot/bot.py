@@ -7,10 +7,10 @@ import asyncio
 import logging
 import sys
 from config_bot import BOT_TOKEN
-from commands import START, FILMS, CREATE_FILM, SEARCH_FILM, FILTER_FILMS, BOT_COMMANDS
-from data import get_films, add_film
+from commands import START, FILMS, CREATE_FILM, SEARCH_FILM, FILTER_FILMS, SEARCH_FILM_BY_ACTOR, BOT_COMMANDS
+from data import get_films, add_film, search_film_by_actor_name
 from keybords import render_buttons, FilmCallback
-from models import Film, FilmForm, MovieState
+from models import FilmForm, MovieState, ActorState
 from aiogram.fsm.context import FSMContext
 # from aiogram.fsm.state import State, StatesGroup
 
@@ -23,6 +23,32 @@ async def start(message: Message) -> None:
     Here is a list of commands
 /films
 """)
+    
+@dp.message(SEARCH_FILM_BY_ACTOR)
+async def start(message: Message, state: FSMContext) -> None:
+    await state.set_state(ActorState.name)
+    await message.answer(""" 
+    Enter name of actor
+""")
+    
+@dp.message(ActorState.name)
+async def start(message: Message, state: FSMContext) -> None:
+    data = await state.update_data(name=message.text.strip().capitalize())
+    name = data.get('name', '')
+    if name:
+        films = search_film_by_actor_name(name)
+        if films:
+            for f in films:
+                await message.answer(f"""
+            🎬 <b>{f['name']}</b> ({f['year']})
+            ⭐️ Rating: {f['rate']}
+            🎭 Genre: {f['genre']}
+            🎬 Director: {f['director']}
+            👥 Actors: {', '.join(f['actors'])}
+            📝 Description:\n{f['description']}
+            📌 Poster: {f['poster']}"""
+            )
+
     
 
 @dp.message(SEARCH_FILM)

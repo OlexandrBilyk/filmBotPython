@@ -25,3 +25,6 @@ class FilmForm(StatesGroup):
 class MovieState(StatesGroup):
     search_query = State()
     filter_params = State()
+
+class ActorState(StatesGroup):
+    name = State()

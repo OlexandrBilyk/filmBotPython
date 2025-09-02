@@ -21,3 +21,14 @@ def add_film(film: dict) -> None:
     with open('bot/films.json', 'w') as fh:
         data.append(film)
         json.dump(data, fh, indent=4, ensure_ascii=False)
+
+def search_film_by_actor_name(actor: str) -> list[str]:
+    """
+    Function that search filmsa by actor name
+    """
+    data = get_films()
+    films = []
+    for film in data:
+        if actor in film['actors']:
+            films.append(film) 
+    return films
