@@ -8,11 +8,10 @@ import logging
 import sys
 from config_bot import BOT_TOKEN
 from commands import START, FILMS, CREATE_FILM, SEARCH_FILM, FILTER_FILMS, SEARCH_FILM_BY_ACTOR, BOT_COMMANDS
-from data import get_films, add_film, search_film_by_actor_name
+from data import get_films, add_film, search_film_by_actor_name, get_answer_text
 from keybords import render_buttons, FilmCallback
 from models import FilmForm, MovieState, ActorState
 from aiogram.fsm.context import FSMContext
-# from aiogram.fsm.state import State, StatesGroup
 
 
 dp = Dispatcher()
@@ -39,17 +38,7 @@ async def start(message: Message, state: FSMContext) -> None:
         films = search_film_by_actor_name(name)
         if films:
             for f in films:
-                await message.answer(f"""
-            🎬 <b>{f['name']}</b> ({f['year']})
-            ⭐️ Rating: {f['rate']}
-            🎭 Genre: {f['genre']}
-            🎬 Director: {f['director']}
-            👥 Actors: {', '.join(f['actors'])}
-            📝 Description:\n{f['description']}
-            📌 Poster: {f['poster']}"""
-            )
-
-    
+                await message.answer(get_answer_text(f))
 
 @dp.message(SEARCH_FILM)
 async def search_film(message: Message, state: FSMContext):
@@ -101,15 +90,8 @@ async def filter_films(message: Message, state: FSMContext):
 
     if filtered_films:
         for f in filtered_films:
-            await message.answer(f"""
-🎬 <b>{f['name']}</b> ({f['year']})
-⭐️ Rating: {f['rate']}
-🎭 Genre: {f['genre']}
-🎬 Director: {f['director']}
-👥 Actors: {', '.join(f['actors'])}
-📝 Description:\n{f['description']}
-📌 Poster: {f['poster']}"""
-)
+            await message.answer(get_answer_text(f))
+
     
     await state.clear()
     
@@ -199,17 +181,7 @@ async def start(message: Message) -> None:
 async def send_callback_data(callback: CallbackQuery, callback_data: FilmCallback) -> None:
     film_name = callback_data.name
     film = get_films(film_name)
-    await callback.message.answer(text=f"""
-🎬 <b>{film['name']}</b> ({film['year']})
-⭐️ Rating: {film['rate']}
-🎭 Genre: {film['genre']}
-🎬 Director: {film['director']}
-👥 Actors: {', '.join(film['actors'])}
-📝 Description:\n{film['description']}
-📌 Poster: {film['poster']}"""
-)
-
-    
+    await callback.message.answer(text=get_answer_text(film))    
  
 async def main() -> None:
     bot = Bot(token=BOT_TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))

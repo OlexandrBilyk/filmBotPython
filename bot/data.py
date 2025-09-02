@@ -24,7 +24,7 @@ def add_film(film: dict) -> None:
 
 def search_film_by_actor_name(actor: str) -> list[str]:
     """
-    Function that search filmsa by actor name
+    Function that search films by actor name
     """
     data = get_films()
     films = []
@@ -32,3 +32,15 @@ def search_film_by_actor_name(actor: str) -> list[str]:
         if actor in film['actors']:
             films.append(film) 
     return films
+
+def get_answer_text(f):
+    text = f"""
+🎬 <b>{f['name']}</b> ({f['year']})
+⭐️ Rating: {f['rate']}
+🎭 Genre: {f['genre']}
+🎬 Director: {f['director']}
+👥 Actors: {', '.join(f['actors'])}
+📝 Description:\n{f['description']}
+📌 Poster: {f['poster']}"""
+    
+    return text
